@@ -159,7 +159,7 @@
 <span class="comment-counter">
     <i class="fa fa-comments-o"></i>
     
-        <span class="disqus-comment-count" data-disqus-identifier data-disqus-url="http://yoursite.com/2019/03/15/mytitlelay/">0</span>
+        <span><a href="http://yoursite.com/2019/03/15/mytitlelay/#isso-thread"></a></span>
     
 </span>
 
@@ -206,7 +206,7 @@
 <span class="comment-counter">
     <i class="fa fa-comments-o"></i>
     
-        <span class="disqus-comment-count" data-disqus-identifier data-disqus-url="http://yoursite.com/2019/03/14/myttg/">0</span>
+        <span><a href="http://yoursite.com/2019/03/14/myttg/#isso-thread"></a></span>
     
 </span>
 
@@ -257,7 +257,7 @@
 <span class="comment-counter">
     <i class="fa fa-comments-o"></i>
     
-        <span class="disqus-comment-count" data-disqus-identifier data-disqus-url="http://yoursite.com/2019/03/07/hello-world/">0</span>
+        <span><a href="http://yoursite.com/2019/03/07/hello-world/#isso-thread"></a></span>
     
 </span>
 
@@ -509,18 +509,21 @@ Quick
 
         
     
-    <script>
-    var disqus_shortname = 'hexo-theme-hueman';
-    
-    
-    (function() {
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-    </script>
+
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<div id="gitalk-container"></div>
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '132ad2dd9800b47bcc06',
+        clientSecret: 'ecec6875f3e9113335e3831c6260673a681bfa41',
+        id: md5(window.location.pathname),
+        repo: 'https://github.com/WHHHH/WHHHH.github.io# GitHub repository name',
+        owner: 'WHHHH# GitHub user name',
+        admin: '"WHHHH# GitHub repo owner and collaborators who can initialize github issues"'
+    })
+    gitalk.render('gitalk-container')
+</script>
 
 
 

@@ -173,7 +173,7 @@
 
 
 
-    <a data-url="http://yoursite.com/2019/03/15/mytitlelay/" data-id="cjte2pn7q0001cwamzcyvmgry" class="article-share-link"><i class="fa fa-share"></i>Compartir</a>
+    <a data-url="http://yoursite.com/2019/03/15/mytitlelay/" data-id="cjte452o60002c8amugurhxr7" class="article-share-link"><i class="fa fa-share"></i>Compartir</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -262,9 +262,21 @@
     <section id="comments">
     
         
-    <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </div>
+
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<div id="gitalk-container"></div>
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '132ad2dd9800b47bcc06',
+        clientSecret: 'ecec6875f3e9113335e3831c6260673a681bfa41',
+        id: md5(window.location.pathname),
+        repo: 'https://github.com/WHHHH/WHHHH.github.io# GitHub repository name',
+        owner: 'WHHHH# GitHub user name',
+        admin: '"WHHHH# GitHub repo owner and collaborators who can initialize github issues"'
+    })
+    gitalk.render('gitalk-container')
+</script>
 
     
     </section>
@@ -499,20 +511,21 @@
 
         
     
-    <script>
-    var disqus_shortname = 'hexo-theme-hueman';
-    
-    
-    var disqus_url = 'http://yoursite.com/2019/03/15/mytitlelay/';
-    
-    (function() {
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-    </script>
+
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<div id="gitalk-container"></div>
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '132ad2dd9800b47bcc06',
+        clientSecret: 'ecec6875f3e9113335e3831c6260673a681bfa41',
+        id: md5(window.location.pathname),
+        repo: 'https://github.com/WHHHH/WHHHH.github.io# GitHub repository name',
+        owner: 'WHHHH# GitHub user name',
+        admin: '"WHHHH# GitHub repo owner and collaborators who can initialize github issues"'
+    })
+    gitalk.render('gitalk-container')
+</script>
 
 
 
